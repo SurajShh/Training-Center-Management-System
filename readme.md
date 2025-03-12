@@ -66,16 +66,19 @@ POST /training-centers/register
     "coursesOffered": ["C", "JavaScript", "AWS"],
     "contactPhone": "7896789006"
 }
-
+```
 
 2. Get All Training Centers
-
-GET /training-centers/all
+```http
+- GET /training-centers/all
+```
 
 3. Get Training Center by ID
-
-GET /training-centers/{id}
+```http
+- GET /training-centers/{id}
+```
 
 4. Delete Training Center
-
-DELETE /training-centers/delete/{id}
+```http
+- DELETE /training-centers/delete/{id}
+```
