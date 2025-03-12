@@ -18,16 +18,15 @@ Postman or cURL (For API testing, optional)
 
 1. Clone the Repository
 
-git clone https://github.com/your-repository-url.git
-cd training-center-management
+- git clone https://github.com/your-repository-url.git
+- cd training-center-management
 
 2. Configure the Database
 
-Create a new MySQL database:
+- Create a new MySQL database:
+ - CREATE DATABASE trainingcenterdb;
 
-CREATE DATABASE trainingcenterdb;
-
-Update the database configuration in src/main/resources/application.properties:
+- Update the database configuration in src/main/resources/application.properties:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/trainingcenterdb
 spring.datasource.username=root  # Change as per your DB user
@@ -38,19 +37,19 @@ spring.jpa.show-sql=true
 3. Build and Run the Project
 
 Run the following command to build and start the application:
-
-mvn spring-boot:run
+- mvn spring-boot:run
 
 Or, package the application as a JAR and run it:
 
 mvn clean package
-java -jar target/training-center-management-0.0.1-SNAPSHOT.jar
+- java -jar target/training-center-management-0.0.1-SNAPSHOT.jar
 
 ## API Endpoints
 
 1. Register a Training Center
-
+```http
 POST /training-centers/register
+```
 
 ```json
 {
@@ -70,15 +69,15 @@ POST /training-centers/register
 
 2. Get All Training Centers
 ```http
-- GET /training-centers/all
+GET /training-centers/all
 ```
 
 3. Get Training Center by ID
 ```http
-- GET /training-centers/{id}
+ GET /training-centers/{id}
 ```
 
 4. Delete Training Center
 ```http
-- DELETE /training-centers/delete/{id}
+DELETE /training-centers/delete/{id}
 ```
