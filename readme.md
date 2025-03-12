@@ -52,6 +52,7 @@ java -jar target/training-center-management-0.0.1-SNAPSHOT.jar
 
 POST /training-centers/register
 
+```json
 {
     "centerName": "ABC Training Institute",
     "centerCode": "AMN123456789",
