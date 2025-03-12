@@ -27,12 +27,14 @@ Postman or cURL (For API testing, optional)
  - CREATE DATABASE trainingcenterdb;
 
 - Update the database configuration in src/main/resources/application.properties:
-
+  
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/trainingcenterdb
 spring.datasource.username=root  # Change as per your DB user
 spring.datasource.password=root  # Change as per your DB password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+```
 
 3. Build and Run the Project
 
